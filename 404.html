@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      var path = window.location.pathname;
+      window.location.replace(window.location.origin + window.location.pathname.split('/').slice(0, 2).join('/') + '/?p=' + path.substring(1));
+    </script>
+  </head>
+  <body></body>
+</html>
